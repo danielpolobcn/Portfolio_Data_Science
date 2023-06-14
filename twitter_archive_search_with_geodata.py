@@ -34,7 +34,7 @@ def connect_to_endpoint(url, params):
         raise Exception(response.status_code, response.text)
     return response.json()
 
-# main function: send request and buid dataset, output as CSV.
+# main function: send request and build dataset, output as CSV.
 def main():
     response = connect_to_endpoint(search_url, query_params)
     
